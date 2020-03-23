@@ -100,6 +100,10 @@ using namespace std;
 
 
     string phonetic::find(string text, string word) {  //returns the word, similar in text
+        if(word==" "){
+            throw exception();
+        }
+
         int i = 0;
         int j = 0;
         string answer = "";
